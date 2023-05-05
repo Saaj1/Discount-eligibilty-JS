@@ -7,7 +7,7 @@ function checkEligibility() {
   // Check eligibility for discount
   let isEligible = false;
 
-  if (age >= 18 && isMember) {
+  if (age >= 18 && isMember || age >= 65) {
     isEligible = true;
   }
 
