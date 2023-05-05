@@ -1,3 +1,4 @@
+
 function checkEligibility() {
 
   // Get user input for age and membership status
@@ -13,8 +14,11 @@ function checkEligibility() {
 
   // Display eligibility message
   let result = document.getElementById("result");
-  if (isEligible) {
-    result.innerHTML = "Congratulations! You are eligible for a discount.";
+  if (age >= 65) {
+    result.innerHTML = "Congratulations! You are eligible for senior a discount.";
+    result.style.color = "#007200";
+  } else if (isEligible) {
+    result.innerHTML = "Congratulations! You are eligible for a  discount.";
     result.style.color = "#007200";
   } else {
     result.innerHTML = "Sorry, you are not eligible for a discount.";
